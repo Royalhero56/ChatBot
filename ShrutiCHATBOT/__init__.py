@@ -1,9 +1,16 @@
 import asyncio
+import uvloop
 
 try:
-    asyncio.get_event_loop()
+    asyncio.get_running_loop()
 except RuntimeError:
-    asyncio.set_event_loop(asyncio.new_event_loop())
+    asyncio.set_event_loop(uvloop.new_event_loop())
+
+import logging
+import time
+from pymongo import MongoClient
+...
+बाकी आपका पूरा कोड
 import logging
 import time
 from pymongo import MongoClient
