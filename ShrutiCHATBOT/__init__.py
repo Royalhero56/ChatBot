@@ -10,7 +10,7 @@ import logging
 import time
 from pymongo import MongoClient
 ...
-बाकी आपका पूरा कोड
+# बाकी आपका पूरा कोड
 import logging
 import time
 from pymongo import MongoClient
